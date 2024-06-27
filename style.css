@@ -1,0 +1,44 @@
+:root{
+    --cor-fundo: rgb(0, 106, 255);
+    --cor-secundaria: rgb(0, 106, 255); 
+    --cor-destaque: #004cbe;
+    --cor-texto: #001533;
+
+}
+
+body {
+   background: var(--cor-fundo); /* Usa a variável cor-fundo como background inicial */
+   background: linear-gradient(125deg, rgb(0, 106, 255) 20%, rgb(0, 255, 247) 59%); 
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa-principal{
+    background: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px
+}
+
+h1{
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
